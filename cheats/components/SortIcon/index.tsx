@@ -1,11 +1,16 @@
 import React from "react";
 
-export const SortIcon = ({ asc }) => {
+type ShortIcon = {
+  asc: boolean;
+} & Omit<JSX.IntrinsicElements["img"], "src" | "alt">;
+
+export const SortIcon: React.FC<ShortIcon> = ({ asc, ...rest }) => {
   return (
     <img
+      {...rest}
       src={require(asc
-        ? "src/common/components/SortIcon/images/iconmonstr-angel-up-thin.svg"
-        : "src/common/components/SortIcon/images/iconmonstr-angel-down-thin.svg")}
+        ? "public/icons/chevron-up.svg"
+        : "public/icons/chevron-down.svg")}
       alt={`Sorticon ${asc ? "acending" : "decending"}`}
     />
   );
