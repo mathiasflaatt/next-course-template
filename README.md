@@ -38,7 +38,9 @@ Tweet your question to [@mikaelbrevik](https://twitter.com/intent/tweet?screen_n
 
 ---
 
-## Case text
+## Case
+
+---
 
 ## Case 1.0 - Custom hooks (20min)
 
@@ -129,3 +131,14 @@ Vi bruker dexie som wrapper for å gjøre livet lettere.
 - Bruk class wrapper som ligger i `cheats/db/typedDatabase.ts` for å få typing.
 - Endre favorittContext til å benytte seg av databasewrapperen.
 - Hent favoritter fra databasen ved mount, lag funksjon for add og remove.
+
+---
+
+## Bonus Case
+
+Implementer en "Global Atom State" med Context og useReucer
+
+- Flytt boksøk, og pagnation over til GAS (Global Atom State)
+- Flytt sortering til GAS.
+- Flytt henting av bok og author til GAS.
+- Flytt indexedDB handling og output til GAS
